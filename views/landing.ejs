@@ -1,4 +1,90 @@
-<h1>
+<%-include("partials/header")%>
+
+<div class="landing-main-container">
 	
- LANDING PAGE
-</h1>
+
+
+	<div class="container " id="landing-page">
+		<h1 class="d-flex justify-content-center">
+			<span class="animated fadeIn">I am</span> <span class="neon">&nbsp Srivatsav</span>
+		</h1>
+		<br>
+		<h3 class="d-flex justify-content-center animated fadeIn">
+			I have 3+ years of experience as a Software Developer
+		</h3>
+
+	</div>
+
+
+
+	<div class="container animated fadeIn" id="contact-container">
+		<div class="row">
+
+			<!--Start of Grid column-->		
+			<div class="col-md-8 mb-md-0 mb-5 animated fadeIn">
+				<h2 id="letsTalk">
+					Let's talk
+					<span>&nbsp&nbsp <i class="bell fas fa-phone-alt"></i></span>
+				</h2>
+				<br>
+				<h3>
+					I would love to hear from <span style="color:#e67500">you.</span>
+				</h3>
+				<h3>
+					You can contact me in the following ways.
+				</h3>
+
+
+			</div>		
+			<!--End of Grid column-->
+
+			<!--Start of Grid column-->		
+			<div class="col-md-4 mb-md-0 mb-5 animated fadeIn">			
+				<div class= container>
+					<div class="row contact-item">
+						<span><a href="mailto:srivatsavg9@gmail.com"><i class="icon far fa-envelope"></i>&nbsp&nbsp&nbsp srivatsavg9@gmail.com</a></span> 
+					</div>	
+					<div class="row contact-item">
+						<a href="https://www.linkedin.com/in/srivatsav-gopalakrishnan" target="_blank"><i class="icon fab fa-linkedin"></i>&nbsp&nbsp&nbsp Linkedin</a>
+					</div>	
+
+					<div class="row contact-item">
+						<span><i class="icon fas fa-map-marker-alt"></i>&nbsp&nbsp&nbsp Chennai</span> 
+					</div>	
+
+
+
+				</div>
+
+			</div>		
+			<!--End of Grid column-->
+
+
+		</div>
+
+	</div>
+	
+</div>
+
+<script>
+	//document.getElementBy("nav-landing").classList.add("glow");
+	
+	let contactItems = document.getElementsByClassName("contact-item");
+	for(var i=0; i < contactItems.length;i++){
+		contactItems[i].addEventListener("mouseenter",function(){
+			this.classList.add("animated bounce");
+		});
+	}
+	
+	for(var i=0; i < contactItems.length;i++){
+		contactItems[i].addEventListener("mouseleave",function(){
+			this.classList.remove("animated bounce");
+		});
+	}	
+	
+</script>
+
+
+<%-include("partials/footer")%>
+
+
