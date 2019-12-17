@@ -1,5 +1,4 @@
 var bodyParser = require("body-parser"),
-	mongoose = require("mongoose"),
 	express = require("express"),
 	app = express(),
 	path=require('path'),
@@ -22,6 +21,6 @@ app.get("/",function(req,res){
 
 //LISTEN
 
-app.listen(process.env.PORT||8000,function(){
+app.listen(process.env.PORT||3000,function(){
 	console.log("&&&&&&&&&&&&  SERVER HAS STARTED &&&&&&&&&&&&"+process.env.PORT);
 });
