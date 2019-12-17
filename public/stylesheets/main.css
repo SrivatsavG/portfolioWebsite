@@ -9,8 +9,8 @@ html, body {
 	background-size: cover;
 	color:white;
 	
-	
-	background-image:url("/images/background2.jpg");
+	background:black;
+	/*background-image:url("/images/background2.jpg");*/
 	background-repeat:no-repeat;
 	 background-size: auto;
 }
@@ -49,6 +49,53 @@ button:hover {
 ::-webkit-scrollbar {
 display: none;
 }
+
+
+/*---------------------------RESOPONSIVINESS------------------------------*/
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .education-button{
+	font-size:1rem;
+	}
+	
+	body{
+		background-image:url("/images/background-phone.png");
+	}
+	
+	.landing-main-container{
+		margin-top:30%;
+	}
+	
+	#contact-container{
+		margin-top:40%;
+	}
+	
+	.contact-item {
+        margin-top: 10px;
+}
+	
+}
+
+@media screen and (min-width: 1000px) {
+  .education-details{
+	padding-left:150px;
+	}
+}
+
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+
+
+
+
+
 /*-----------------------------------NAVBAR----------------------------*/
 
 .navbar-dark .navbar-nav .nav-link {
@@ -97,14 +144,19 @@ display: none;
 
 #landing-page{
 	width:100%;
+	text-align:left;
 	
+}
+
+.skillsPara h5{
+	text-align:left;
 }
 
 
 /*---------------------------CONTACT---------------------------------------------*/
 
 #contact-container{
-	margin-top:20%;
+	margin-top:10%;
 	margin-bottom:5%
 }
 
@@ -130,6 +182,10 @@ display: none;
 	
 	text-decoration: none;
 	color:white;
+}
+
+#letsTalk {
+	color:#e67500;
 }
 
 
@@ -221,9 +277,34 @@ display: none;
 
 /*----------------LIGHTBOX--------------------*/
 
-.thumbnails {
-	margin-right: =15px;
+.skills span{
+	float:left;
+	width:33%;
+	box-sizing:border-box;
+	padding-right:15px;
+	margin-bottom:15px;
+	transition: transform .2s;
 }
+
+.skills img{
+	display:block;	
+	transition: all .2s ease-in-out;
+	border-radius: 5%;
+}
+
+.skills img:hover {
+  	box-shadow: 0 0 7px 1px rgba(0, 140, 186, 0.5);
+	transform: scale(1) rotate(1deg);
+
+	transform: scale(1.5);
+	opacity:1;
+}
+
+
+.thumbnails {
+	margin-right: 15px;
+}
+
 
 .thumbnails a{
 	float:left;
@@ -405,42 +486,6 @@ display: none;
 
   43% { transform: rotate(0); }
   100% { transform: rotate(0); }
-}
-
-/*---------------------------RESOPONSIVINESS------------------------------*/
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-} 
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .education-button{
-	font-size:1rem;
-	}
-	
-	body{
-		background-image:url("/images/background-phone.png");
-	}
-	
-	.landing-main-container{
-		margin-top:30%;
-	}
-	
-	#contact-container{
-		margin-top:30%;
-	}
-	
-	.contact-item {
-        margin-top: 10px;
-}
-	
-}
-
-@media screen and (min-width: 1000px) {
-  .education-details{
-	padding-left:150px;
-	}
 }
 
 

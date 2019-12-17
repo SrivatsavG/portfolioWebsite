@@ -1,20 +1,63 @@
 <%-include("partials/header")%>
 
-<div class="landing-main-container">
+<div class="container landing-main-container">
 	
+	<div class="row">
+		<div class="col-md-8 container" id="landing-page">
+			<h5 class="animated fadeIn">
+				Hello, I am Srivatsav. 
+				<br>
+				<br>
+				I have 3+ years of experience as a Web Developer & Programmer and I currently live in Bangalore,India.
+			</h5>
+
+			
+		</div>
 	
-
-
-	<div class="container " id="landing-page">
-		<h1 class="d-flex justify-content-center">
-			<span class="animated fadeIn">I am</span> <span class="neon">&nbsp Srivatsav</span>
-		</h1>
-		<br>
-		<h3 class="d-flex justify-content-center animated fadeIn">
-			I have 3+ years of experience as a Software Developer
-		</h3>
-
 	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<div class="row skillsPara animated fadeIn">
+		<div class="col">
+			
+			<h5>
+				
+				<em>
+					"I don't know who you are. I don't know what you want. If you are looking for ransom I can tell you I don't have money, but what I do have are a very particular set of skills. Skills I have acquired over a very long career. Skills that make me a gift for people like you. If you contact me that'll be the end of it...."
+				</em>
+				
+			</h5>
+			
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col skills group d-flex justify-content-around">
+					<span data-lightbox="gallery" data-title=""><img src="/images/css.png" class="skill img-fluid animated flipInX"></span>
+					<span data-lightbox="gallery" data-title=""><img src="/images/mongo.jpg" class="skill img-fluid animated flipInX"></span>	
+					<span data-lightbox="gallery" data-title=""><img src="/images/C.png" class="skill img-fluid animated flipInX"></span>	
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col skills group d-flex justify-content-around">
+					<span data-lightbox="gallery" data-title=""><img src="/images/kotlin.jpg" class="skill img-fluid animated flipInX"></span>
+					<span data-lightbox="gallery" data-title=""><img src="/images/python.png" class="skill img-fluid animated flipInX"></span>
+					<span data-lightbox="gallery" data-title=""><img src="/images/JS.png" class="skill img-fluid animated flipInX"></span>	
+				</div>
+			</div>				
+				
+		</div>
+		
+	</div>
+	
+	
+</div>
+	
 
 
 
@@ -24,16 +67,16 @@
 			<!--Start of Grid column-->		
 			<div class="col-md-8 mb-md-0 mb-5 animated fadeIn">
 				<h2 id="letsTalk">
-					Let's talk
+					<strong>Let's talk</strong>
 					<span>&nbsp&nbsp <i class="bell fas fa-phone-alt"></i></span>
 				</h2>
 				<br>
-				<h3>
-					I would love to hear from <span style="color:#e67500">you.</span>
-				</h3>
-				<h3>
+				<h5>
+					I would love to hear from you.
+				</h5>
+				<h5>
 					You can contact me in the following ways.
-				</h3>
+				</h5>
 
 
 			</div>		
@@ -69,28 +112,43 @@
 
 <script>
 	
-	//LOADER
-	
-	
-	
-	
-	
-	
-	
 	//GLOW
-	document.getElementBy("nav-landing").classList.add("glow");
+	document.getElementById("nav-landing").classList.add("glow");
+	
+	
+	
+	//SKILLS ICON
+	
+	let skills = document.getElementsByClassName("skill");
+	
+	// console.log("skills");
+	
+	// for(var i=0; i < skills.length;i++){
+	// 	skills[i].addEventListener("mouseenter",function(){
+	// 		this.classList.add("animated","pulse");
+	// 	});
+	// }
+	
+	// for(var i=0; i < skills.length;i++){
+	// 	skills[i].addEventListener("mouseleave",function(){
+	// 		this.classList.remove("animated","pulse");
+	// 	});
+	// }
+	
 	
 	//CONTACT ITEM HOVER
 	let contactItems = document.getElementsByClassName("contact-item");
+	
+	
 	for(var i=0; i < contactItems.length;i++){
 		contactItems[i].addEventListener("mouseenter",function(){
-			this.classList.add("animated bounce");
+			this.classList.add("animated","pulse");
 		});
 	}
 	
 	for(var i=0; i < contactItems.length;i++){
 		contactItems[i].addEventListener("mouseleave",function(){
-			this.classList.remove("animated bounce");
+			this.classList.remove("animated","pulse");
 		});
 	}	
 	
@@ -98,8 +156,6 @@
 
 
 
-
-<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
 
 	
 
