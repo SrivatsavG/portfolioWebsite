@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     height: 100%;
+	min-height: 100%;
 	font-family: 'Playfair Display', serif;
 	background-size: cover;
 	color:white;
@@ -56,6 +57,19 @@ display: none;
   width: device-width ;
   zoom: 1.0 ;
 } 
+
+
+/* If the screen size is 767px wide or less, skills container gets top margin*/
+@media screen and (max-width: 767px) {
+	.skills{
+		margin-top:10%;
+	}
+	
+	body{
+		height:100%;
+	}
+}
+
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
