@@ -18,6 +18,8 @@ app.get("/",function(req,res){
 	res.render("landing");
 });
 
+
+
 app.get("/education",function(req,res){
 	res.render("education");
 })
