@@ -10,10 +10,10 @@ html, body {
 	background-size: cover;
 	color:white;
 	
-	/*background:black;*/
+	background:#141611;
 	background-image:url("/images/background2.jpg");
 	background-repeat:no-repeat;
-	 background-size: auto;
+	background-size:auto;
 }
 	
 .row {
