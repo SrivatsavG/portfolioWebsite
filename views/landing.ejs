@@ -25,17 +25,15 @@
 
 				<div class="row">
 					<div class="col skills group d-flex justify-content-around">
+						<span data-lightbox="gallery" data-title=""><img src="/images/nodejs.png" class="skill img-fluid animated flipInX"></span>
+					
 						<span data-lightbox="gallery" data-title=""><img src="/images/kotlin.jpg" class="skill img-fluid animated flipInX"></span>
-						<span data-lightbox="gallery" data-title=""><img src="/images/python.png" class="skill img-fluid animated flipInX"></span>
+						
 						<span data-lightbox="gallery" data-title=""><img src="/images/JS.png" class="skill img-fluid animated flipInX"></span>	
 					</div>
 				</div>
 			
-				<div class="row">
-					<div class="col skills group d-flex justify-content-around">
-						<span data-lightbox="gallery" data-title=""><img src="/images/nodejs.png" class="skill img-fluid animated flipInX"></span></span>	
-					</div>
-				</div>	
+				
 
 			</div>
 	
@@ -101,19 +99,21 @@
 	
 	let skills = document.getElementsByClassName("skill");
 	
-	// console.log("skills");
 	
-	// for(var i=0; i < skills.length;i++){
-	// 	skills[i].addEventListener("mouseenter",function(){
-	// 		this.classList.add("animated","pulse");
-	// 	});
-	// }
 	
-	// for(var i=0; i < skills.length;i++){
-	// 	skills[i].addEventListener("mouseleave",function(){
-	// 		this.classList.remove("animated","pulse");
-	// 	});
-	// }
+	for(var i=0; i < skills.length;i++){
+		skills[i].addEventListener("mouseenter",function(){
+			this.classList.add("animated","pulse");
+		});
+	}
+	
+	for(var i=0; i < skills.length;i++){
+		skills[i].addEventListener("mouseleave",function(){
+			this.classList.add("animated","bounce");
+		});
+	}
+	
+	
 	
 	
 	//CONTACT ITEM HOVER
@@ -122,7 +122,7 @@
 	
 	for(var i=0; i < contactItems.length;i++){
 		contactItems[i].addEventListener("mouseenter",function(){
-			this.classList.add("animated","pulse");
+			this.classList.add("animated","bounce");
 		});
 	}
 	

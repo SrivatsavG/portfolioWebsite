@@ -325,6 +325,7 @@ display: none;
 	display:block;	
 	transition: all .2s ease-in-out;
 	border-radius: 5%;
+	margin:10px;
 }
 
 .skills img:hover {
