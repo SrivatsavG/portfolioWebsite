@@ -2,7 +2,11 @@
 
 <div class="landing-main-container">
 	
-
+	<div class="loader-wrapper">
+		 <span class="loader">
+		 	<span class="loader-inner"></span>
+	 	</span>
+	 </div>
 
 	<div class="container " id="landing-page">
 		<h1 class="d-flex justify-content-center">
@@ -67,8 +71,21 @@
 </div>
 
 <script>
-	//document.getElementBy("nav-landing").classList.add("glow");
 	
+	//LOADER
+	
+	$(window).on("load",function(){
+		$(".loader-wrapper").fadeOut("slow");
+	});
+	
+	
+	
+	
+	
+	//GLOW
+	document.getElementBy("nav-landing").classList.add("glow");
+	
+	//CONTACT ITEM HOVER
 	let contactItems = document.getElementsByClassName("contact-item");
 	for(var i=0; i < contactItems.length;i++){
 		contactItems[i].addEventListener("mouseenter",function(){
