@@ -9,8 +9,8 @@ html, body {
 	background-size: cover;
 	color:white;
 	
-	background:black;
-	/*background-image:url("/images/background2.jpg");*/
+	/*background:black;*/
+	background-image:url("/images/background2.jpg");
 	background-repeat:no-repeat;
 	 background-size: auto;
 }
@@ -137,21 +137,42 @@ display: none;
 
 /*-------------------------LANDING-------------------------------------*/
 
+#landing-intro{
+	margin-top:10%;
+	margin-bottom:10%;
+}
+
 
 .landing-main-container{
 	margin-top:10%;
-}
-
-#landing-page{
-	width:100%;
-	text-align:left;
-	
 }
 
 .skillsPara h5{
 	text-align:left;
 }
 
+
+
+/* ----------------------PARALLAX-----------------------*/
+.parallax{
+	background:url("/images/background6.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment:fixed;
+	height:300px;
+	width:100%;
+	margin-left:0;
+}
+
+
+.parallax2{
+	background:url("/images/contact1.png") no-repeat center;
+	background-size: cover;
+	background-attachment:fixed;
+	height:300px;
+	width:100%;
+	margin-left:0;
+
+}
 
 /*---------------------------CONTACT---------------------------------------------*/
 

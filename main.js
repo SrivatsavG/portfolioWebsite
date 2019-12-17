@@ -28,6 +28,10 @@ app.get("/workex",function(req,res){
 	res.render("workex")
 })
 
+app.get("/skills",function(req,res){
+	res.render("skills")
+})
+
 
 //LISTEN
 
