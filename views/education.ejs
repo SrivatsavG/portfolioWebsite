@@ -1,0 +1,206 @@
+<%-include("partials/header")%>
+
+<div class="container main-container animated fadeIn">
+	
+	<div id="button-container" class="mx-auto d-flex justify-content-around">
+		
+		<!--<button id="para1-button" class="education-button">Masters</button>-->
+		<button id="para2-button" class="education-button button-active">Bachelors</button>
+		<button id="para3-button" class="education-button">Online Courses</button>
+		<button id="para4-button" class="education-button">Schooling</button>
+		
+	</div>
+	
+	<hr id="education-hr">
+	
+	
+	<div class="container" id="education-content">
+		
+		<!--
+		<div id="para1" class="animated fadeIn">
+			<div class="row">
+				<div class="col d-none d-md-block col-md-4">
+					<img src="" class="img-fluid">
+				</div>
+				<div class="col md-8">
+					Why do we use it?
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+				</div>
+
+			</div>
+		</div>
+
+		-->
+
+		<div id="para2" class="animated fadeIn">
+			<div class="row">
+				<div class="col d-none d-md-block col-md-4">
+					<img src="/images/JeppiarLogo.png" class="img-fluid animated slideInLeft">
+				</div>
+				<div class="education-details col md-8 animated slideInRight">
+					<strong>Degree</strong> : Bachelor of Engineering in Computer Science and Engineering
+					<br>
+					<strong>College</strong> : Jeppiaar Engineering College
+					<br>
+					<strong>Year</strong>   : 2012-16
+					<br>
+					<strong>CGPA</strong>   : 7.69
+					<br>
+					<p>
+						<strong>Responsibilities held</strong> :
+					</p>
+					<ul>
+						<li>Department Head, Computer Society of India</li>
+						<li>Founded & edited the first departmental newsletter
+</li>
+						<li>Member of Cultural Committee</li>							
+					</ul>
+					<p>
+						<strong>Awards</strong> :
+					</p>
+						<ul>
+							<li>2nd Prize, Invente 2K15 Technical fest Hackathon</li>
+							<li>3rd Place-Kurukshetra'15-Ninja Coding Contest</li>			
+						</ul>
+					
+					
+				</div>
+
+			</div>
+			<div class="row">
+				<div class=" col">
+					<p>
+						<strong>Projects</strong>  :
+					</p>
+					<ui class="education-details2">
+						<li>
+							A web application that improved upon an algorithm to detect phishing websites. I integrated the blacklisting technique with a link traversing algorithm. The blacklist technique involves maintaining a list of phishing sites and warning the user when one tried to enter the site.  It is used in almost all modern web browsers like Firefox, Chrome, Safari, etc. On the other hand, the link traversing algorithm checked if the URLs in a website were properly mapped.  A significant number of broken links indicates the possibility of a malicious website as hackers concentrate only on the part of the web site that retrieves user information. To find the broken links, I automated the needed web scraping using Selenium WebDriver.
+						</li>
+						<br>
+						<li>
+							I created a student database using MySQL and a Common Gateway Interface using Python. My peers used this portal to log in, manage their class schedule, grades, attendance and communicate with their professors. 
+						</li>
+					</ui>
+				</div>
+			</div>
+			
+		</div>
+
+		<div id="para3" class="myinvisible animated fadeIn">
+						
+			<div class="thumbnails group">
+				<a href="images/Udemy-Web Developer.jpg" data-lightbox="gallery" data-title="Certificate Number: UC-W9UIEB01"><img src="images/Udemy-Web Developer.jpg" class="img-fluid animated slideInLeft"></a>
+			</div>
+			
+			
+		
+		</div>
+		
+	
+		<div id="para4" class="myinvisible animated fadeIn">
+			
+			<div class="row">
+				<div class="col d-none d-md-block col-md-4">
+					<img src="/images/CVlogo.png" class="img-fluid animated slideInLeft">
+				</div>
+				<div class="education-details col md-8 animated slideInRight">
+					<div class="col md-8">
+					<strong>School</strong> : Chettinad Vidyashram
+					<br>
+					<strong>Board </strong>  : Central Board of Secondary Education ( CBSE )
+					<br>
+					<strong>Graduated Year </strong>  : 2012
+					<br>
+					<strong>12th</strong>   : 86%
+					<br>
+					<strong>10th</strong> : 9.2 
+					
+					<p>
+						<strong>Responsibilities held</strong> :
+					</p>
+						<ul>
+							<li>House Secretary</li>
+						</ul>
+						
+					
+				</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+</div>
+
+<script>
+	
+	document.getElementById("nav-education").classList.add("glow");
+	
+	/*
+	$("#para1-button").on("click",function(event){
+		document.getElementById("para1").classList.remove("myinvisible");
+		document.getElementById("para1-button").classList.add("button-active");
+		document.getElementById("para2").classList.add("myinvisible");
+		document.getElementById("para2-button").classList.remove("button-active");
+		document.getElementById("para3").classList.add("myinvisible");
+		document.getElementById("para3-button").classList.remove("button-active");
+		document.getElementById("para4").classList.add("myinvisible");
+		document.getElementById("para4-button").classList.remove("button-active");
+		document.getElementByClass("certificate-image").forEach(function() {
+		  this.classList.add("myinvisible");
+		});
+	})
+	*/
+	$("#para2-button").on("click",function(event){
+		//document.getElementById("para1").classList.add("myinvisible");
+		//document.getElementById("para1-button").classList.remove("button-active");
+		document.getElementById("para2").classList.remove("myinvisible");
+		document.getElementById("para2-button").classList.add("button-active");
+		document.getElementById("para3").classList.add("myinvisible");
+		document.getElementById("para3-button").classList.remove("button-active");
+		document.getElementById("para4").classList.add("myinvisible");
+		document.getElementById("para4-button").classList.remove("button-active");
+	})
+	
+	$("#para3-button").on("click",function(event){
+		//document.getElementById("para1").classList.add("myinvisible");
+		//document.getElementById("para1-button").classList.remove("button-active");
+		document.getElementById("para2").classList.add("myinvisible");
+		document.getElementById("para2-button").classList.remove("button-active");
+		document.getElementById("para3").classList.remove("myinvisible");
+		document.getElementById("para3-button").classList.add("button-active");
+		document.getElementById("para4").classList.add("myinvisible");
+		document.getElementById("para4-button").classList.remove("button-active");
+	})
+	
+	$("#para4-button").on("click",function(event){
+		//document.getElementById("para1").classList.add("myinvisible");
+		//document.getElementById("para1-button").classList.remove("button-active");
+		document.getElementById("para2").classList.add("myinvisible");
+		document.getElementById("para2-button").classList.remove("button-active");
+		document.getElementById("para3").classList.add("myinvisible");
+		document.getElementById("para3-button").classList.remove("button-active");
+		document.getElementById("para4").classList.remove("myinvisible");
+		document.getElementById("para4-button").classList.add("button-active");
+	})
+	
+	
+	
+	
+</script>
+<%-include("partials/footer")%>
+
+
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main2.css">
+
+	
+
+
+	</body> 
+
+</html>
+
