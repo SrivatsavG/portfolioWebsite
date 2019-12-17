@@ -355,6 +355,7 @@ display: none;
 	display:block;	
 	transition: all .2s ease-in-out;
 	border-radius: 5%;
+	min-width:70px;
 }
 
 
@@ -369,6 +370,7 @@ display: none;
 	transform: scale(1) rotate(1deg);
 	opacity:1;
 }
+
 
 
 /* ANIMATE CSS*/

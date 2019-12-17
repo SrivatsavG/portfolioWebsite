@@ -224,6 +224,7 @@ display: none;
 	padding-right:15px;
 	box-sizing:border-box;
 	margin-bottom:15px;
+	min-width:250px;
 }
 
 .thumbnails img {
@@ -231,6 +232,7 @@ display: none;
 	display:block;	
 	transition: all .2s ease-in-out;
 	border-radius: 5%;
+	
 }
 
 
