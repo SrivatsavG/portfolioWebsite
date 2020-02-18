@@ -114,6 +114,7 @@ display: none;
 
 .navbar-dark .navbar-nav .nav-link {
     color:white;
+	text-decoration:none;
 }
 
 .nav-item{
@@ -130,6 +131,7 @@ display: none;
 .navbar-dark .navbar-brand {
     color: white;
 	transition:all 0.3s ease-in-out;
+	text-decoration:none;
 }
 
 .navbar-dark .navbar-brand:hover {
