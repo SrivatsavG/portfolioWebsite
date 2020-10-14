@@ -220,14 +220,14 @@
 		document.getElementById("para3-button").classList.remove("button-active");
 		document.getElementById("para4").classList.add("myinvisible");
 		document.getElementById("para4-button").classList.remove("button-active");
-		document.getElementByClass("certificate-image").forEach(function() {
-		  this.classList.add("myinvisible");
-		});
+		// document.getElementByClass("certificate-image").forEach(function() {
+		//   this.classList.add("myinvisible");
+		// });
 	})
 	
 	$("#para2-button").on("click",function(event){
-		//document.getElementById("para1").classList.add("myinvisible");
-		//document.getElementById("para1-button").classList.remove("button-active");
+		document.getElementById("para1").classList.add("myinvisible");
+		document.getElementById("para1-button").classList.remove("button-active");
 		document.getElementById("para2").classList.remove("myinvisible");
 		document.getElementById("para2-button").classList.add("button-active");
 		document.getElementById("para3").classList.add("myinvisible");
@@ -237,8 +237,8 @@
 	})
 	
 	$("#para3-button").on("click",function(event){
-		//document.getElementById("para1").classList.add("myinvisible");
-		//document.getElementById("para1-button").classList.remove("button-active");
+		document.getElementById("para1").classList.add("myinvisible");
+		document.getElementById("para1-button").classList.remove("button-active");
 		document.getElementById("para2").classList.add("myinvisible");
 		document.getElementById("para2-button").classList.remove("button-active");
 		document.getElementById("para3").classList.remove("myinvisible");
@@ -248,8 +248,8 @@
 	})
 	
 	$("#para4-button").on("click",function(event){
-		//document.getElementById("para1").classList.add("myinvisible");
-		//document.getElementById("para1-button").classList.remove("button-active");
+		document.getElementById("para1").classList.add("myinvisible");
+		document.getElementById("para1-button").classList.remove("button-active");
 		document.getElementById("para2").classList.add("myinvisible");
 		document.getElementById("para2-button").classList.remove("button-active");
 		document.getElementById("para3").classList.add("myinvisible");
