@@ -188,6 +188,15 @@ display: none;
 	line-height: 1.5;
 }
 
+.education-details3{
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.educationBottomRow {
+  margin-top: 2rem;
+}
+
 
 /*-------------------WORKEX---------------------*/
 
